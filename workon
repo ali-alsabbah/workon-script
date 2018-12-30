@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ "$1" != "" ]; then
+    echo "$WORKON_HOME"/"$1"/bin/activate
+    . "$WORKON_HOME"/"$1"/bin/activate
+else
+    echo Virtual Environments in $WORKON_HOME:
+    ls "$WORKON_HOME"
+fi
